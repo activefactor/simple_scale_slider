@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>slider</title>
+    <link rel="stylesheet" href="css/simple_scale_slider.css">
+</head>
+<body>
+    <div class="slider01"></div>
+    <div class="value01">0</div>
+    
+    <div class="slider02"></div>
+    <div class="value02">50</div>
+
+
+
+<script src="js/simple_scale_slider.js"></script>
+<script>
+(function(){
+    var resizeSlider1 = new SimpleScaleSlider('.slider01');
+    var resizeSlider2 = new SimpleScaleSlider('.slider02', {step:10,buttonPositionX:0.5});
+
+    
+    resizeSlider1.addEventListener('slideButtonMove',function(e){
+        document.querySelector('.value01').innerHTML = Math.floor(e.detail.percent);
+    });
+    
+    resizeSlider2.addEventListener('slideButtonMove',function(e){
+        document.querySelector('.value02').innerHTML = Math.floor(e.detail.percent);
+    });
+
+})();    
+</script>
+</body>
+</html>
