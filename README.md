@@ -1,11 +1,11 @@
 # simple_scale_slider
 簡易スライダー
 
-#3Description
+##Description
 要素を指定して、その要素の中に簡易的なスライダーを作成することができます。
 スライダーの位置を百分率で返します。
 
-#Usage
+##Usage
 
 CSSのリンク
 ```html
@@ -34,4 +34,5 @@ JavaScriptの設定
 
 
 ##sample
-https://activefactor.github.io/simple_scale_slider/
+
+<https://activefactor.github.io/simple_scale_slider/>
